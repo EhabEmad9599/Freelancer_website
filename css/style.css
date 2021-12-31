@@ -3,7 +3,7 @@
   --pargrahColor: #717481;
   --headerColor: #000;
   --mainColor: #4f0b7b;
-  --section-bg: #fff;
+  --section-bg: #EEE;
 }
 
 .dark-mode {
@@ -137,8 +137,11 @@ header .info p {color: var(--pargrahColor);}
 
 .jobs .intro span {color: var(--pargrahColor);}
 
-.jobs .job 
-{background: var(--section-bg); padding: 20px; border-radius: 8px;}
+.jobs .job {
+  background: var(--section-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
 
 .jobs .job h5 
 {color: var(--headerColor);}
