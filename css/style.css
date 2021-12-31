@@ -1,0 +1,213 @@
+:root {
+  --primary-bg: #fff;
+  --pargrahColor: #717481;
+  --headerColor: #000;
+  --mainColor: #4f0b7b;
+  --section-bg: #fff;
+}
+
+.dark-mode {
+  --primary-bg: #191919;
+  --pargrahColor: #b5b5b5;
+  --headerColor: #fff;
+  --section-bg: #1f1f1f;
+}
+
+body 
+{background-color: var(--primary-bg);}
+
+header {
+  /* background-color: #EFF2FF; */
+  background-image: url("../img/header-background.jpg"); height: 37rem; overflow: hidden;}
+
+/* start navbar */
+.navbar .navbar-brand 
+{color: var(--mainColor);}
+
+.navbar ul li .login 
+{color: var(--mainColor) !important;}
+
+.navbar ul li .search 
+{color: var(--mainColor) !important; border: 1px solid var(--mainColor); border-radius: 8px;}
+
+.navbar ul li .search:hover 
+{color: #fff !important; background-color: var(--mainColor); transition: all 0.3s ease-in-out; }
+
+/* End navbar */
+/* start header */
+header .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+header .info h2 {font-size: 50px;}
+
+header .info p {color: var(--pargrahColor);}
+/* End header */
+
+/* start company section */
+.company 
+{padding-top: 80px;}
+
+.company i 
+{color: var(--pargrahColor);}
+/* End company section */
+
+/* start category section */
+.category 
+{padding-top: 100px;}
+
+.category .content h2 
+{font-size: 40px; color: var(--headerColor);}
+
+.category .content p 
+{color: var(--pargrahColor);}
+
+.category .content button 
+{background-color: var(--mainColor); color: #fff;}
+
+.category .subcategory 
+{position: relative; cursor: pointer;}
+
+.category .subcategory .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.category .subcategory .overlay span {
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+  left: 8px;
+}
+/* End category section */
+
+/* start sucess-stories */
+.sucess-stories {padding: 30px;}
+
+.sucess-stories .about {
+  background: var(--section-bg);
+  padding: 20px 100px 20px 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sucess-stories .about h2 
+{color: var(--headerColor);}
+
+.sucess-stories .about p {
+  color: var(--pargrahColor); line-height: 1.7;}
+
+.sucess-stories .photo 
+{background-image: url(../img/pexels-fauxels-3184338.jpg); width: 100%;}
+/* End sucess-stories */
+
+/* start devloper section */
+.devloper {padding-top: 80px;}
+
+.devloper .left-section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.devloper .left-section h4 
+{color: var(--headerColor);}
+
+.devloper .left-section p 
+{color: var(--pargrahColor);}
+
+.devloper .right-section 
+{background-color: #2b3f42; border-radius: 5px; margin: 45px 0;}
+
+/* End devloper section */
+
+/* start find your next project section */
+.jobs {background-color: var(--backgroundColor); padding: 50px 0;}
+
+.jobs .intro h3 {color: var(--headerColor);}
+
+.jobs .intro span {color: var(--pargrahColor);}
+
+.jobs .job 
+{background: var(--section-bg); padding: 20px; border-radius: 8px;}
+
+.jobs .job h5 
+{color: var(--headerColor);}
+
+.jobs .job p 
+{color: var(--pargrahColor);}
+/* End find your next project section */
+
+/* start freelance */
+.freelance .find-work {
+  background-color: var(--mainColor);
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.freelance .find-work .title h2 
+{font-size: 45px;}
+
+.freelance .find-work .title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.freelance .find-work .title button {
+  background-color: #fff;
+  color: var(--mainColor);
+  border-radius: 5px;
+  width: 150px;
+}
+/* End freelance */
+/* start footer */
+footer {margin-top: 80px; padding-bottom: 40px;}
+
+footer .ft-main h6 {color: var(--headerColor);}
+
+footer .ft-main ul li a 
+{text-decoration: none; color: var(--pargrahColor);}
+
+.ft-main form input:first-child 
+{border: none; border-bottom: 1px solid #000;}
+
+.ft-main form input:last-child {
+  background-color: var(--mainColor);
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.ft-main p {color: #717481; margin-top: 15px;}
+
+.social 
+{background-color: red;}
+/* End footer */
+
+/* media query */
+@media (max-width: 991.98px) {
+  header .info h2 {font-size: 30px;}
+  .category .content h2 {font-size: 25px;}
+  .sucess-stories .about {padding: 10px 20px;}
+  .sucess-stories .about h2 {font-size: 20px;}
+  .sucess-stories .about p {font-size: 14px;}
+  .devloper h4 {font-size: 22px; margin-top: 15px;}
+  .devloper p {font-size: 14px;}
+  .jobs .job h5 {font-size: 15px;}
+  .jobs .job p {font-size: 13px;}
+  .freelance .find-work .title h2 {font-size: 25px;}
+}
+/* media query */
